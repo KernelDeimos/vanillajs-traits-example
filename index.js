@@ -44,10 +44,6 @@ const TExampleTrait = Symbol('TExampleTrait');
  * A class that implements the TExampleTrait trait.
  */
 class ClassWithTraits extends Base {
-    constructor() {
-        super();
-    }
-
     [TExampleTrait] = {
         sayHello () {
             return `Hello from ${this.name}`;
